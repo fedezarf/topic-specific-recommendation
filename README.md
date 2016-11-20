@@ -55,7 +55,7 @@ This step consists in producing a sorted list of items in a descending order of 
 To test the quality of the recommendation method, we will use the Average Normalized Discounted Cumulative Gain metric (average nDCG).
 First of all, to evaluate the nDCG for a particular user we need to compute the NCG for that user, and after, normalize the value dividing by the maximum DCN for that user. More formally:
 
-![nDCG](/images/dcg1.png)
+![nDCG](/images/dcg.png)
 
 
 In the experiment we will compute the DCG on all items in the test set of the user, sorted according to the ranking computed by the recommendation algorithm. 
@@ -76,7 +76,7 @@ This final list is that one to consider for the DCG evaluation, let’s call thi
 
 The DCG of a particular user is defined as follow:
 
-![DCG](/images/dcg2.png)
+![DCG](/images/dcg1.png)
 
 
 Where the index of an item is the position of the item itself in the evaluation_list.
