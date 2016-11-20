@@ -1,4 +1,4 @@
-# Topic Specific Recommendation 
+# Topic Specific Recommendation using Topic-Specific PageRank
 
 In this project we are going to solve recommendation problems using link-analysis techniques. In particular, we will perform graph transformation and use Topic-Specific-PageRank on the transformed graph to obtain recommendations.
 We will test our methods on MovieLens 100K Dataset. This dataset contains 100000 ratings of 943 users on 1682 movies. Each rating is a natural number in [1, 5]. 
@@ -70,6 +70,21 @@ As explained before, to obtain a normalized version of DCG we have to divide the
 
 
 The nDCG gives automatically an idea about how far the predictor is form a perfect predictor, because a perfect predictor has an nDCG equals to one. It is also important to have a lower bound on the nDCG value. For this reason, the the python function “minimum_discounted_cumulative_gain(user_id, test_graph_users_items)”  has been implemented. 
+
+### References
+
+[1] A. Langville and C. Meyer,
+           "A survey of eigenvector methods of web information retrieval."
+           http://citeseer.ist.psu.edu/713792.html
+           
+[2] Page, Lawrence; Brin, Sergey; Motwani, Rajeev and Winograd, Terry,
+           The PageRank citation ranking: Bringing order to the Web. 1999
+           http://dbpubs.stanford.edu:8090/pub/showDoc.Fulltext?lang=en&doc=1999-66&format=pdf
+           
+Topic-specific PageRank
+http://nlp.stanford.edu/IR-book/html/htmledition/topic-specific-pagerank-1.html
+           
+        
 
 
 
