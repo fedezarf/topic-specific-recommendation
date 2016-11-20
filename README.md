@@ -3,6 +3,17 @@
 In this project we are going to solve recommendation problems using link-analysis techniques. In particular, we will perform graph transformation and use Topic-Specific-PageRank on the transformed graph to obtain recommendations.
 We will test our methods on MovieLens 100K Dataset. This dataset contains 100000 ratings of 943 users on 1682 movies. Each rating is a natural number in [1, 5]. 
 
+## Using the code
+
+The code expects in input two files: a training graph and a test graph. The two files must be in the format described here:
+http://grouplens.org/datasets/movielens/100k/
+
+The files uploaded in the respository can be used to run the recommendation for every user and compute the evaluation metrics.
+
+```
+python 
+```
+
 ## Description of the operations
 
 In this project we will implement a particular link-analysis procedure for movie recommendation. 
