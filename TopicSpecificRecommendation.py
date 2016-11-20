@@ -85,8 +85,8 @@ class TopicSpecificRecommendation():
         
         Given that for our purposes we need to call the pagerank function for
         every user in the graph the function was modified in order compute the 
-        scipy matrix of the graph outside the pagerank function. This led to
-        a significant increase in performance (from 30 min to 30 secs)
+        scipy matrix of the graph outside the pagerank function. This leads to
+        a significant increase in performance.
         
         
         PageRank computes a ranking of the nodes in the graph G based on
