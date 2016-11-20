@@ -20,7 +20,7 @@ In this project we will implement a particular link-analysis procedure for movie
 First of all, it is fundamental to notice that we can model recommendation system data as a weighted bipartite graph, where nodes are users and items (movies for MovieLens dataset), and where an edge between nodes represents a rating of a user for an item.
 In the picture we can see an example of this type of graph:
 
-image
+![GitHub Logo](/images/logo.png)
 
 ### First Step - User Independent part
 
@@ -30,6 +30,8 @@ This reduced graph is called Item-Item graph.
 In the picture is represented the corresponding Item-Item graph of the previous bipartite graph:
 
 We must pay attention at the fact that the value of the ratings is not involved in the reduced Item-Item graph construction process.
+
+https://en.wikipedia.org/wiki/Bipartite_graph
 
 ### Second Step - User Dependent part
 
