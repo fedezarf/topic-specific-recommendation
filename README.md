@@ -20,7 +20,7 @@ In this project we will implement a particular link-analysis procedure for movie
 First of all, it is fundamental to notice that we can model recommendation system data as a weighted bipartite graph, where nodes are users and items (movies for MovieLens dataset), and where an edge between nodes represents a rating of a user for an item.
 In the picture we can see an example of this type of graph:
 
-![GitHub Logo](/images/logo.png)
+![User-Item](/images/graph1.png)
 
 ### First Step - User Independent part
 
@@ -29,7 +29,12 @@ An edge between two item nodes in the reduced graph is present when they are bot
 This reduced graph is called Item-Item graph.
 In the picture is represented the corresponding Item-Item graph of the previous bipartite graph:
 
+![Item-Item](/images/graph2.png)
+
+
 We must pay attention at the fact that the value of the ratings is not involved in the reduced Item-Item graph construction process.
+
+
 
 https://en.wikipedia.org/wiki/Bipartite_graph
 
@@ -50,6 +55,7 @@ This step consists in producing a sorted list of items in a descending order of 
 To test the quality of the recommendation method, we will use the Average Normalized Discounted Cumulative Gain metric (average nDCG).
 First of all, to evaluate the nDCG for a particular user we need to compute the NCG for that user, and after, normalize the value dividing by the maximum DCN for that user. More formally:
 
+![nDCG](/images/dcg1.png)
 
 
 In the experiment we will compute the DCG on all items in the test set of the user, sorted according to the ranking computed by the recommendation algorithm. 
@@ -70,6 +76,7 @@ This final list is that one to consider for the DCG evaluation, let’s call thi
 
 The DCG of a particular user is defined as follow:
 
+![DCG](/images/dcg2.png)
 
 
 Where the index of an item is the position of the item itself in the evaluation_list.
