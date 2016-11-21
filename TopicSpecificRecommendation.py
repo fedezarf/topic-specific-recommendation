@@ -209,8 +209,8 @@ class TopicSpecificRecommendation():
         raise NetworkXError('pagerank_scipy: power iteration failed to converge '
                             'in %d iterations.' % max_iter)
     
-    
-        
+
+
     def create_preference_vector_for_teleporting(self, user_id):
         """Compute the preference vector for a given user.
         
@@ -218,8 +218,7 @@ class TopicSpecificRecommendation():
         probability distribution among all nodes in the virtual topic must be 
         biased using the rating values that the input user has associated to 
         each rated items.
-        For example, the teleporting probability distribution for user_3 on the 
-        nodes of the reduced Item-Item graph is the following: 
+        
         
         
 
